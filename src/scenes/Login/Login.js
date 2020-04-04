@@ -4,6 +4,7 @@ import { useHistory, useLocation } from "react-router-dom";
 
 import InputTxt from "../../components/InputTxt/InputTxt";
 import Button from "../../components/Button/Button";
+import { Grid, Column, Row } from "../../components/Grid";
 import * as AuthService from "../../Services/AuthService";
 import useNotification from "../../hooks/useNotification";
 import { authReducer } from "../../reducers";
@@ -46,6 +47,16 @@ export default function Login(props) {
         />
         <Button label="Submit" type="submit" />
       </form>
+      <Grid>
+        <Row>
+          <Column xs="12" sm="6" md="8" lg="3">
+            xs-12 sm-6 md-8
+          </Column>
+          <Column sm="6" md="4" lg="9">
+            xs-12 sm-6 md-4
+          </Column>
+        </Row>
+      </Grid>
     </div>
   );
 }
